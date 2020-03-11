@@ -1,0 +1,187 @@
+// varibles
+
+// ui:
+$website-width: 1280px;
+
+// color:
+$body-background:#fff;
+$main-color:#ffbc00;
+$complentary-color1:#3B56B3;
+$complentary-color2:#87A2FF;
+$light-color:#f4f4f4;
+$medium-color:#ccc;
+$dark-color:#333;
+$bg-image : url(https://images.unsplash.com/photo-1529528744093-6f8abeee511d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+
+// utilities
+
+.txt-type {
+  border-right: solid 1px #ccc;
+
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.py {
+  &-1 {
+    padding: 1rem 0;
+  }
+
+  &-2 {
+    padding: 2rem 0;
+  }
+
+  &-3 {
+    padding: 3rem 0;
+  }
+
+  &-4 {
+    padding: 4rem 0;
+  }
+}
+
+.my {
+  &-1 {
+    padding: 1rem 0;
+  }
+
+  &-2 {
+    padding: 2rem 0;
+  }
+
+  &-3 {
+    padding: 3rem 0;
+  }
+
+  &-4 {
+    padding: 4rem 0;
+  }
+}
+
+// sizes
+
+.m-heading {
+  font-size: 3rem;
+}
+
+.l-heading {
+  font-size: 4rem;
+  line-height: 1.15;
+}
+
+// componnests
+.container {
+  max-width: $website-width;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+
+}
+
+.lead {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+// styles
+
+.bg {
+  &-main {
+    background-color: $main-color;
+    color: set-text-color($main-color);
+  }
+
+  &-light-color {
+    background-color: $light-color;
+    color: set-text-color($light-color);
+  }
+
+  &-dark-color {
+    background-color: $dark-color;
+    color: set-text-color($dark-color);
+  }
+}
+
+.border-bottom-highlight {
+  display: block;
+  height: 5px;
+  width: 10rem;
+  background: $main-color;
+  margin: .55rem auto 1rem auto;
+}
+
+.border-bottom-highlight2 {
+  height: 2.5px;
+  margin-top: .1rem;
+  background: $dark-color;
+
+}
+
+// @mixin poligon-traingle-right {
+//   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 76%, 0 100%, 0 100%, 0% 75%);
+//   clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 83%, 0 100%, 0 100%, 0% 75%);
+// }
+
+// @mixin poligon-traingle-left {
+//   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 100% 100%, 0 83%, 0 100%, 0% 79%);
+//   clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 100%, 0 83%, 0 100%, 0% 75%);
+// }
+
+%btn-shared {
+  display: inline-block;
+  padding: .75rem 1rem;
+  transition: all 0.3s;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn {
+  @extend %btn-shared;
+
+  &-primary {
+    background-color: $main-color;
+    color: $light-color;
+  }
+
+  &-light {
+    background-color: $light-color;
+    color: $dark-color;
+  }
+
+  &-dark {
+    background-color: $dark-color;
+    color: $light-color;
+  }
+
+}
+
+button[class*='btn-']:hover,
+a[class*='btn-']:hover,
+input[class*='btn-']:hover {
+  background-color: $main-color;
+}
+
+// animations
+
+
+
+// function
+
+@function set-text-color($background-color) {
+  @if(lightness($background-color)>50) {
+    @return $dark-color;
+  }
+
+  @else {
+    @return $light-color
+  }
+}
+
+;

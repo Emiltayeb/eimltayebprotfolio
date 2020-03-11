@@ -1,0 +1,424 @@
+@import "config";
+@import "gallery_grid";
+
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  font-family: "Assistant", sans-serif;
+  line-height: 1.6;
+
+}
+
+a {
+  text-decoration: none;
+
+}
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+// logo
+
+.logo {
+  width: 60px;
+  height: 40px;
+}
+
+
+#main-nav {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+
+  ul {
+    display: flex;
+
+    li {
+      padding: 1rem 1.5rem;
+    }
+  }
+
+  a {
+    text-transform: uppercase;
+    color: #fff;
+    padding-bottom: .55rem;
+    border-bottom: 3px transparent solid;
+    transition: border-color 0.5s;
+
+    &.current {
+      border-bottom: 3px $main-color solid;
+    }
+
+    &:hover {
+      border-color: $main-color;
+    }
+
+  }
+}
+
+// header
+#header {
+
+
+  &-home {
+    background: $bg-image no-repeat center center / cover;
+
+    height: 90vh;
+
+
+
+    // head content
+    .header-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding-top: 15%;
+      color: $light-color;
+
+      h1 span {
+        margin-right: .55rem;
+      }
+
+
+    }
+
+  }
+
+  &-inner {
+    background: $bg-image no-repeat 30% 30% / cover;
+    height: 15vh;
+
+
+  }
+}
+
+
+
+// sections
+
+// a
+
+#home {
+  &-a {
+    .my-spicealztion {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 1rem;
+
+      &>div {
+        padding: 1rem;
+        border: 1px solid $main-color;
+
+      }
+
+      .fas {
+        color: $main-color;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  // b
+  &-b {
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      div {
+        padding: 3rem;
+
+        &:nth-child(1) {
+          background-color: $complentary-color1;
+          color: set-text-color($complentary-color1);
+          // @include poligon-traingle-right;
+        }
+
+        &:nth-child(2) {
+          background-color: $medium-color;
+
+        }
+
+        &:last-child {
+          background-color: $complentary-color2;
+          color: set-text-color($complentary-color2);
+          // @include poligon-traingle-left;
+        }
+
+      }
+
+
+      li {
+        margin-bottom: 1rem;
+      }
+
+      .description {
+        font-size: 2rem;
+      }
+
+      .number {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  &-c {
+    .process {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 1rem;
+
+
+      .step-number {
+        background-color: $main-color;
+        color: white;
+        border-radius: 50%;
+        padding: .75rem 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 1rem;
+      }
+
+      .step-icon {
+        font-size: 3rem;
+        background-color: $dark-color;
+        padding: 3rem;
+        margin-bottom: 1rem;
+        border-radius: 50%;
+        color: white;
+        position: relative;
+
+        &:hover {
+
+          background-color: $main-color;
+          color: $dark-color;
+          font-size: 4rem;
+          transition: all 1s ease-out;
+
+          .step-number {
+            background-color: $dark-color;
+            color: $light-color;
+          }
+        }
+
+
+
+      }
+
+    }
+  }
+}
+
+// about page
+
+#about {
+  &-a {
+
+    background-color: $main-color;
+
+    .border-bottom-highlight {
+      background-color: $light-color;
+    }
+
+    .biography {
+      display: grid;
+      grid-template-areas:
+        "bioimage  bio  bio"
+
+      ;
+      grid-gap: 1rem;
+
+      img {
+        width: 400px;
+      }
+
+      .bio-img {
+        grid-area: bioimage;
+      }
+
+      .bio-txt {
+        background-color: $medium-color;
+        color: set-text-color($medium-color);
+        padding: 1rem;
+        grid-area: bio;
+
+        h3 {
+          margin-bottom: .75rem;
+          font-size: 1.5rem;
+        }
+      }
+
+    }
+
+
+  }
+
+  // section b
+  &-b {
+
+
+
+    .progress {
+      background-color: $medium-color;
+      height: 20px;
+      border-radius: 15px;
+      margin: 1rem 0;
+
+      div {
+        background-color: $main-color;
+        height: 100%;
+        border-radius: 15px;
+
+
+      }
+    }
+  }
+
+  // secction-c
+
+  &-c {
+    background-color: $complentary-color1;
+
+    color: set-text-color($complentary-color1);
+
+    .edoyot {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 2rem;
+
+      p {
+        background-color: $medium-color;
+        color: set-text-color($medium-color);
+        padding: .75rem;
+        border-radius: 15px;
+        margin-bottom: 1rem;
+      }
+
+      ul {
+        display: flex;
+        align-items: center;
+
+        li {
+          img {
+            width: 120px;
+            margin-right: .75rem;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+#contact {
+  background-color: $light-color;
+
+
+  h2 {
+    font-weight: 100;
+  }
+
+  .contact-form {
+
+    display: grid;
+    grid-template-areas: 'name name email email'
+      'subject subject phone phone'
+      'massage massage massage massage';
+    grid-gap: 1rem;
+  }
+
+  .name {
+    grid-area: name;
+  }
+
+  .email {
+    grid-area: email;
+  }
+
+  .subject {
+    grid-area: subject;
+  }
+
+  .phone {
+    grid-area: phone;
+  }
+
+  .massage {
+    grid-area: massage;
+  }
+
+  input {
+    padding: 1rem;
+
+  }
+
+  input[type="submit"] {
+    grid-column: 2 / span 2;
+
+  }
+
+  textarea {
+    height: 100px;
+  }
+
+
+}
+
+#main-footer {
+  background-color: $dark-color;
+  color: $light-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  height: 5rem;
+
+
+  ul {
+    display: flex;
+
+    li {
+      padding: 1rem;
+
+      i {
+        color: $light-color;
+        font-size: 1.5rem;
+        border: 2px solid white;
+        padding: .55rem .75rem;
+        border-radius: 50%;
+        transition: border-color 0.5s;
+
+        &:hover {
+          border-color: $main-color;
+        }
+      }
+    }
+  }
+
+  // section c
+
+}
+
+@import "media";

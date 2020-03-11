@@ -1,0 +1,207 @@
+// tablets
+
+
+@media (max-width: 1100px) {
+  #header-home {
+
+    .header-content {
+
+      span {
+        display: block;
+      }
+
+      .txt-type {
+        border: none;
+      }
+
+    }
+  }
+}
+
+@media (max-width: 930px) {
+
+  #myworks {
+    .works {
+      grid-template-columns: 2fr;
+
+      .work-image {
+        img {
+          width: 75%;
+        }
+      }
+    }
+  }
+
+  #main-footer {
+    flex-direction: column;
+    align-items: center;
+
+    ul li i {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (max-width: 374px) {
+  #main-nav {
+
+    li {
+
+      a {
+        font-size: .75rem;
+
+      }
+
+    }
+  }
+}
+
+// smartphones
+@media (max-width: 613px) {
+  #main-nav {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    li {
+      padding: 1rem;
+
+      a {
+        padding-bottom: .25rem;
+      }
+    }
+  }
+
+  #header {
+
+    &-home,
+    &-inner {
+      height: 10rem;
+
+      .header-content {
+        display: none;
+      }
+
+    }
+
+
+  }
+
+
+  #home {
+
+
+
+    &-a {
+      .my-spicealztion {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    &-b {
+      .stats {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    &-c {
+      .process {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+
+  // about
+  #about {
+    &-a {
+
+      .biography {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .bio-txt {
+          font-size: 1rem;
+        }
+
+        .bio-img {
+          margin-bottom: 1rem;
+
+        }
+
+      }
+    }
+
+    &-c {
+
+      .m-heading {
+        font-size: 2rem;
+      }
+
+      .lead {
+        font-size: 1rem;
+      }
+
+      .edoyot {
+        grid-template-columns: 1fr;
+
+        ul {
+          flex-direction: column;
+
+          li {
+
+            img {
+              width: 200px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  #myworks {
+    .works {
+      grid-template-columns: 1fr;
+
+      .work-image {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+
+  #contact {
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+
+
+      input {
+        margin: 1rem 0;
+        ;
+
+        &::placeholder {
+          text-align: center;
+        }
+      }
+
+      .message::placeholder {
+        text-align: center;
+      }
+    }
+  }
+
+  #main-footer {
+    flex-direction: column;
+    align-items: center;
+
+    ul li i {
+      font-size: 1rem;
+    }
+  }
+}

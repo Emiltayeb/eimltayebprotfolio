@@ -1,0 +1,98 @@
+  .works {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
+
+
+  .work {
+    position: relative;
+    overflow: hidden;
+
+    // creating overlay
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      transform: scale(1.5) translateX(-75%) translateY(-75%) rotate(-28deg);
+      transition: transform 2s cubic-bezier(0.4, 1, 0.3, 1);
+      opacity: 0.9;
+    }
+
+    // overlay appear
+    &:hover:after {
+      background-color: $main-color;
+      transform: scale(2) translateX(0) translateY(0) rotate(-28deg);
+    }
+
+
+    &-image img {
+      height: 300px;
+
+    }
+
+    // hover on weach work
+    &:hover &-image {
+      transform: scale(1.2);
+      transition: transform 0.3s;
+    }
+
+    &:hover &-text {
+      transform: translateY(0);
+      transition-delay: .5s;
+      opacity: 1;
+      z-index: 1;
+    }
+
+    &-text {
+      position: absolute;
+      color: white;
+      opacity: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: auto;
+      width: 100%;
+      margin-top: 4.5rem;
+      transform: translateY(-20%);
+      transition: opacity 500ms cubic-bezier(0.4, 1, 0.3, 1), transform 500ms cubic-bezier(0.4, 1, 0.3, 1);
+      text-align: center;
+
+
+    }
+
+    &-text-title {
+      font-size: 2.3rem;
+      font-weight: 100;
+
+
+      &-link {
+        text-decoration: none;
+        color: white;
+        border-bottom: solid 1px transparent;
+
+
+        &:hover {
+          color: $dark-color;
+          border-color: black;
+          letter-spacing: .5rem;
+          font-size: 2.7rem;
+          transition: all .7s;
+        }
+      }
+    }
+
+    &-text-category {
+      font-weight: 50;
+      font-size: 1.5rem;
+    }
+
+    &-text-description {
+      margin-top: 2rem;
+    }
+  }
