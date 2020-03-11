@@ -360,9 +360,11 @@ ul {
   #contact input {
     padding: 1rem; }
   #contact input[type="submit"] {
-    grid-column: 2 / span 2; }
+    grid-column: 1 / span 4; }
   #contact textarea {
     height: 100px; }
+  #contact .captcha {
+    display: block; }
 
 #main-footer {
   background-color: #333;
