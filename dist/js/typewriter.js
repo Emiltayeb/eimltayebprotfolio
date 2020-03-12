@@ -29,7 +29,9 @@ class TypeWriter {
     }
 
     // Insert txt into element
-    this.txtElement.innerHTML = `<span >${this.txt}</span>`;
+    this.txtElement.innerHTML = `<span >${this.txt}
+    <span class="txt-marker" > </span>
+    </span>`;
 
 
     // Initial Type Speed
@@ -73,13 +75,22 @@ function init() {
   new TypeWriter(txtElement, words, wait);
 }
 
+// function getRandomColor() {
+//   var letters = '0123456789ABCDEF';
+//   var color = '#';
+//   for (var i = 0; i < 6; i++) {
+//     color += letters[Math.floor(Math.random() * 16)];
+//   }
+//   return color;
+// }
+
 function getRandomColor() {
-  var letters = '0123456789ABCDEF';
-  var color = '#';
-  for (var i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
-  }
-  return color;
+  let r = Math.floor(Math.random() * 256);
+  let g = Math.floor(Math.random() * 256);
+  let b = Math.floor(Math.random() * 256) + 100;
+
+
+  return `rgba(${r},${g},${b})`
 }
 
 function setRandomColor(elem) {

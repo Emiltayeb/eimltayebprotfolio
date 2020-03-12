@@ -15,8 +15,10 @@ $bg-image : url(https://images.unsplash.com/photo-1529528744093-6f8abeee511d?ixl
 
 // utilities
 
-.txt-type {
+.txt-marker {
   border-right: solid 1px #ccc;
+  margin-left: .5rem;
+  animation: flicker .5s infinite;
 
 }
 
@@ -123,15 +125,7 @@ $bg-image : url(https://images.unsplash.com/photo-1529528744093-6f8abeee511d?ixl
 
 }
 
-// @mixin poligon-traingle-right {
-//   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 76%, 0 100%, 0 100%, 0% 75%);
-//   clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 83%, 0 100%, 0 100%, 0% 75%);
-// }
 
-// @mixin poligon-traingle-left {
-//   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 100% 100%, 0 83%, 0 100%, 0% 79%);
-//   clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 100%, 0 83%, 0 100%, 0% 75%);
-// }
 
 %btn-shared {
   display: inline-block;
@@ -185,3 +179,16 @@ input[class*='btn-']:hover {
 }
 
 ;
+
+// animation
+
+
+@keyframes flicker {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1;
+  }
+}
