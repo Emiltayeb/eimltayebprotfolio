@@ -32,29 +32,43 @@
     }
   }
 
+  #about {
+
+    &-c {
+      .edoyot {
+
+
+        grid-template-columns: 1fr;
+
+        ul {
+          flex-direction: column;
+
+          li {
+
+            img {
+              width: 200px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
   #main-footer {
     flex-direction: column;
     align-items: center;
 
     ul li i {
-      font-size: 1rem;
-    }
-  }
-}
+      font-size: .75rem;
 
-@media (max-width: 374px) {
-  #main-nav {
-
-    li {
-
-      a {
-        font-size: .75rem;
-
+      &:hover {
+        font-size: 1.75rem;
       }
-
     }
   }
 }
+
 
 // smartphones
 @media (max-width: 613px) {
@@ -144,20 +158,6 @@
         font-size: 1rem;
       }
 
-      .edoyot {
-        grid-template-columns: 1fr;
-
-        ul {
-          flex-direction: column;
-
-          li {
-
-            img {
-              width: 200px;
-            }
-          }
-        }
-      }
     }
   }
 
@@ -196,12 +196,20 @@
     }
   }
 
-  #main-footer {
-    flex-direction: column;
-    align-items: center;
 
-    ul li i {
-      font-size: 1rem;
+}
+
+
+@media (max-width: 374px) {
+  #main-nav {
+
+    li {
+
+      a {
+        font-size: .75rem;
+
+      }
+
     }
   }
 }

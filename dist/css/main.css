@@ -161,7 +161,7 @@ input[class*='btn-']:hover {
       .work-text-title-link:hover {
         color: #333;
         border-color: black;
-        letter-spacing: .5rem;
+        letter-spacing: .3rem;
         font-size: 2.7rem;
         transition: all .7s; }
   .work-text-category {
@@ -333,19 +333,37 @@ ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem; }
-    #about-c .edoyot p {
+    #about-c .edoyot .recommendation {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+    #about-c .edoyot .recommendation-text {
       background-color: #ccc;
       color: #333;
-      padding: .75rem;
+      font-weight: bold;
+      padding: 2rem;
+      text-align: center;
       border-radius: 15px;
       margin-bottom: 1rem; }
+    #about-c .edoyot img {
+      width: 180px;
+      margin-right: .75rem;
+      border-radius: 50%; }
     #about-c .edoyot ul {
       display: flex;
       align-items: center; }
-      #about-c .edoyot ul li img {
-        width: 120px;
-        margin-right: .75rem;
-        border-radius: 50%; }
+      #about-c .edoyot ul li .recommendation-list-person-disc {
+        color: #f4f4f4;
+        cursor: pointer; }
+        #about-c .edoyot ul li .recommendation-list-person-disc:hover {
+          border-bottom: 1px #f4f4f4 solid;
+          padding-bottom: .15rem; }
+        #about-c .edoyot ul li .recommendation-list-person-disc-name {
+          font-size: 1.5rem; }
+        #about-c .edoyot ul li .recommendation-list-person-disc-work {
+          font-size: 1rem;
+          color: #ccc; }
 
 #contact {
   background-color: #f4f4f4; }
@@ -407,15 +425,19 @@ ul {
     grid-template-columns: 2fr; }
     #myworks .works .work-image img {
       width: 75%; }
+  #about-c .edoyot {
+    grid-template-columns: 1fr; }
+    #about-c .edoyot ul {
+      flex-direction: column; }
+      #about-c .edoyot ul li img {
+        width: 200px; }
   #main-footer {
     flex-direction: column;
     align-items: center; }
     #main-footer ul li i {
-      font-size: 1rem; } }
-
-@media (max-width: 374px) {
-  #main-nav li a {
-    font-size: .75rem; } }
+      font-size: .75rem; }
+      #main-footer ul li i:hover {
+        font-size: 1.75rem; } }
 
 @media (max-width: 613px) {
   #main-nav {
@@ -449,12 +471,6 @@ ul {
     font-size: 2rem; }
   #about-c .lead {
     font-size: 1rem; }
-  #about-c .edoyot {
-    grid-template-columns: 1fr; }
-    #about-c .edoyot ul {
-      flex-direction: column; }
-      #about-c .edoyot ul li img {
-        width: 200px; }
   #myworks .works {
     grid-template-columns: 1fr; }
     #myworks .works .work-image img {
@@ -467,9 +483,8 @@ ul {
       #contact .contact-form input::placeholder {
         text-align: center; }
     #contact .contact-form .message::placeholder {
-      text-align: center; }
-  #main-footer {
-    flex-direction: column;
-    align-items: center; }
-    #main-footer ul li i {
-      font-size: 1rem; } }
+      text-align: center; } }
+
+@media (max-width: 374px) {
+  #main-nav li a {
+    font-size: .75rem; } }
