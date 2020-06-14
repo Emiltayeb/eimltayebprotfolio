@@ -1,11 +1,8 @@
 // tablets
 
-
 @media (max-width: 1100px) {
   #header-home {
-
     .header-content {
-
       span {
         display: block;
       }
@@ -13,13 +10,11 @@
       .txt-type {
         border: none;
       }
-
     }
   }
 }
 
 @media (max-width: 930px) {
-
   #myworks {
     .works {
       grid-template-columns: 2fr;
@@ -33,18 +28,14 @@
   }
 
   #about {
-
     &-c {
       .edoyot {
-
-
         grid-template-columns: 1fr;
 
         ul {
           flex-direction: column;
 
           li {
-
             img {
               width: 200px;
             }
@@ -54,13 +45,12 @@
     }
   }
 
-
   #main-footer {
     flex-direction: column;
     align-items: center;
 
     ul li i {
-      font-size: .75rem;
+      font-size: 0.75rem;
 
       &:hover {
         font-size: 1.75rem;
@@ -68,7 +58,6 @@
     }
   }
 }
-
 
 // smartphones
 @media (max-width: 613px) {
@@ -81,13 +70,12 @@
       padding: 1rem;
 
       a {
-        padding-bottom: .25rem;
+        padding-bottom: 0.25rem;
       }
     }
   }
 
   #header {
-
     &-home,
     &-inner {
       height: 10rem;
@@ -95,17 +83,10 @@
       .header-content {
         display: none;
       }
-
     }
-
-
   }
 
-
   #home {
-
-
-
     &-a {
       .my-spicealztion {
         grid-template-columns: 1fr;
@@ -128,9 +109,7 @@
   // about
   #about {
     &-a {
-
       .biography {
-
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -142,14 +121,11 @@
 
         .bio-img {
           margin-bottom: 1rem;
-
         }
-
       }
     }
 
     &-c {
-
       .m-heading {
         font-size: 2rem;
       }
@@ -157,10 +133,8 @@
       .lead {
         font-size: 1rem;
       }
-
     }
   }
-
 
   #myworks {
     .works {
@@ -174,17 +148,13 @@
     }
   }
 
-
   #contact {
     .contact-form {
       display: flex;
       flex-direction: column;
 
-
       input {
         margin: 1rem 0;
-        ;
-
         &::placeholder {
           text-align: center;
         }
@@ -195,21 +165,14 @@
       }
     }
   }
-
-
 }
-
 
 @media (max-width: 374px) {
   #main-nav {
-
     li {
-
       a {
-        font-size: .75rem;
-
+        font-size: 0.75rem;
       }
-
     }
   }
 }
