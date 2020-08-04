@@ -277,8 +277,8 @@ ul {
   border-color: #ffbc00; }
 
 #header-home {
-  background: -webkit-gradient(linear, left bottom, left top, from(#00000078), to(rgba(67, 67, 67, 0.455))), url("/dist/img/profilePic.jpg");
-  background: linear-gradient(to top, #00000078, rgba(67, 67, 67, 0.455)), url("/dist/img/profilePic.jpg");
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#00000078), to(rgba(67, 67, 67, 0.455))), url("../img/profilePic.jpg");
+  background-image: linear-gradient(to top, #00000078, rgba(67, 67, 67, 0.455)), url("../img/profilePic.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
