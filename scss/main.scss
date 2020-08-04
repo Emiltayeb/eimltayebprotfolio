@@ -37,11 +37,14 @@ ul {
 }
 
 #main-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding-top: 1rem;
-
+  padding: 1rem 1rem;
+  z-index: 5;
   ul {
     display: flex;
 
@@ -65,6 +68,13 @@ ul {
       border-color: $main-color;
     }
   }
+}
+
+// utitlites
+
+#main-nav.scrolled {
+  background-color: rgba(3, 3, 3, 0.728);
+  transition: all 1000ms;
 }
 
 // header
@@ -391,7 +401,7 @@ ul {
   padding: 1.5rem;
   height: 5rem;
 
-  ul {
+  ul {git b
     display: flex;
 
     li {

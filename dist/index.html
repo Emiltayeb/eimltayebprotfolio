@@ -16,28 +16,29 @@
 <body>
   <!-- header -->
   <header id="header-home">
-    <div class="container">
-      <nav id="main-nav">
+          <nav id="main-nav">
         <img class="logo" src="./img/emil_logo.png" alt="">
         <ul>
-          <li><a class="current" href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="myworkds.html">My works</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a class="current" href="#header-home">Home</a></li>
+          <li><a href="#about-b">About</a></li>
+          <li><a href="#myworks">My works</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+    <div class="container">
+
       <div class="header-content">
         <h1 class="l-heading">My Name Is Emil The <span class="txt-type" data-wait="3000"
             data-words='["Web Developer","Music Producer","Instructional Designer"]'></span></h1>
         <p class="lead">Hard working indidual, team player and tech savvy.</p>
-        <a href="myworkds.html" class="btn btn-light">Look at my work's</a>
+        <a href="#myworks" class="btn btn-light">Look at my work's</a>
       </div>
     </div>
   </header>
 
   <!-- scetion a -->
 
-  <section id="myworks" class="text-center py-3">
+  <section id="myworks" class="text-center py-4">
     <div class="container">
       <h2>My Works</h2>
       <div class="border-bottom-highlight"></div>
@@ -202,7 +203,7 @@
  
 
   </section>
-  <section id="about-b" class="py-3">
+  <section id="about-b" class="py-4">
     <div class="container ">
       <h2 class="m-heading text-center">My Technical Skills</h2>
       <div class="border-bottom-highlight"></div>
@@ -376,7 +377,25 @@
       </div>
     </div>
   </section>
-
+  <!-- contact -->
+  <!-- contact -->
+  <section id="contact" class="py-4">
+    <div class="container">
+      <div class="contact">
+        <h2 class="text-center m-heading">How You Can Reach Me</h2>
+        <div class="border-bottom-highlight"></div>
+        <form name="contact" method="POST" data-netlify="true" class="contact-form my-2">
+          <input class="name" name="name" id="name" type="text" placeholder="Enter Your Name" />
+          <input class="email" name="email" id="Email" type="text" placeholder="yourmail@example.com" />
+          <input class="subject" name="subject" id="subject" type="text" placeholder="Your Subject" />
+          <input class="phone" name="phone" id="phone" type="text" placeholder="Enter Your Phone Number" />
+          <textarea class="massage" name="massage" name="message" id="message" placeholder="Enter Message"></textarea>
+          <input type="submit" class="btn btn-dark" value="Send" />
+          <div class="my-2 captcha" data-netlify-recaptcha="true"></div>
+        </form>
+      </div>
+    </div>
+  </section>
   <footer id="main-footer">
     <p>copyright &copy; Emiltayeb 2020</p>
     <ul>
@@ -391,6 +410,8 @@
       </li>
     </ul>
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/smoothScoller.js"></script>
   <script src="js/typewriter.js"></script>
   <script src="js/links.js"></script>
 </body>
