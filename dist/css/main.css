@@ -52,15 +52,15 @@
 
 .bg-main {
   background-color: #ffbc00;
-  color: set-text-color(#ffbc00); }
+  color: #f4f4f4; }
 
 .bg-light-color {
   background-color: #f4f4f4;
-  color: set-text-color(#f4f4f4); }
+  color: #333; }
 
 .bg-dark-color {
   background-color: #333;
-  color: set-text-color(#333); }
+  color: #f4f4f4; }
 
 .border-bottom-highlight {
   display: block;
@@ -359,7 +359,8 @@ ul {
       display: flex;
       align-items: center; }
       #about-c .edoyot ul li .recommendation-list-person-disc {
-        color: #f4f4f4;
+        color: black;
+        border-bottom: 1px transparent solid;
         cursor: pointer; }
         #about-c .edoyot ul li .recommendation-list-person-disc:last-child {
           display: flex;
@@ -367,8 +368,7 @@ ul {
           justify-content: center;
           align-items: center; }
         #about-c .edoyot ul li .recommendation-list-person-disc:hover {
-          border-bottom: 1px #f4f4f4 solid;
-          padding-bottom: 0.15rem; }
+          border-color: black; }
         #about-c .edoyot ul li .recommendation-list-person-disc-name {
           font-size: 1.5rem; }
         #about-c .edoyot ul li .recommendation-list-person-disc-work {

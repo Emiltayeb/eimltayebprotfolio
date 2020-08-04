@@ -299,7 +299,8 @@ ul {
 
         li {
           .recommendation-list-person-disc {
-            color: $light-color;
+            color: black;
+            border-bottom: 1px transparent solid;
             cursor: pointer;
 
             &:last-child {
@@ -310,8 +311,7 @@ ul {
             }
 
             &:hover {
-              border-bottom: 1px $light-color solid;
-              padding-bottom: 0.15rem;
+              border-color: black;
             }
 
             &-name {
