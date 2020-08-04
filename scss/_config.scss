@@ -4,22 +4,21 @@
 $website-width: 1280px;
 
 // color:
-$body-background:#fff;
-$main-color:#ffbc00;
-$complentary-color1:#3B56B3;
-$complentary-color2:#87A2FF;
-$light-color:#f4f4f4;
-$medium-color:#ccc;
-$dark-color:#333;
-$bg-image : url(https://images.unsplash.com/photo-1529528744093-6f8abeee511d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+$body-background: #fff;
+$main-color: #ffbc00;
+$complentary-color1: #3b56b3;
+$complentary-color2: #87a2ff;
+$light-color: #f4f4f4;
+$medium-color: #ccc;
+$dark-color: #333;
+$bg-image: url(https://images.unsplash.com/photo-1529528744093-6f8abeee511d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
 
 // utilities
 
 .txt-marker {
   border-right: solid 1px #ccc;
-  margin-left: .5rem;
-  animation: flicker .5s infinite;
-
+  margin-left: 0.5rem;
+  animation: flicker 0.5s infinite;
 }
 
 .text-center {
@@ -83,7 +82,6 @@ $bg-image : url(https://images.unsplash.com/photo-1529528744093-6f8abeee511d?ixl
   padding: 0 1.5rem;
   margin: auto;
   overflow: hidden;
-
 }
 
 .lead {
@@ -115,21 +113,18 @@ $bg-image : url(https://images.unsplash.com/photo-1529528744093-6f8abeee511d?ixl
   height: 5px;
   width: 10rem;
   background: $main-color;
-  margin: .55rem auto 1rem auto;
+  margin: 0.55rem auto 1rem auto;
 }
 
 .border-bottom-highlight2 {
   height: 2.5px;
-  margin-top: .1rem;
+  margin-top: 0.1rem;
   background: $dark-color;
-
 }
-
-
 
 %btn-shared {
   display: inline-block;
-  padding: .75rem 1rem;
+  padding: 0.75rem 1rem;
   transition: all 0.3s;
   border: none;
   outline: none;
@@ -153,39 +148,31 @@ $bg-image : url(https://images.unsplash.com/photo-1529528744093-6f8abeee511d?ixl
     background-color: $dark-color;
     color: $light-color;
   }
-
 }
 
-button[class*='btn-']:hover,
-a[class*='btn-']:hover,
-input[class*='btn-']:hover {
+button[class*="btn-"]:hover,
+a[class*="btn-"]:hover,
+input[class*="btn-"]:hover {
   background-color: $main-color;
 }
 
 // animations
 
-
-
 // function
 
 @function set-text-color($background-color) {
-  @if(lightness($background-color)>50) {
+  @if (lightness($background-color) >50) {
     @return $dark-color;
-  }
-
-  @else {
-    @return $light-color
+  } @else {
+    @return $light-color;
   }
 }
 
-;
-
 // animation
-
 
 @keyframes flicker {
   from {
-    opacity: 0
+    opacity: 0;
   }
 
   to {

@@ -1,7 +1,7 @@
 .txt-marker {
   border-right: solid 1px #ccc;
-  margin-left: .5rem;
-  animation: flicker .5s infinite; }
+  margin-left: 0.5rem;
+  animation: flicker 0.5s infinite; }
 
 .text-center {
   text-align: center; }
@@ -67,16 +67,16 @@
   height: 5px;
   width: 10rem;
   background: #ffbc00;
-  margin: .55rem auto 1rem auto; }
+  margin: 0.55rem auto 1rem auto; }
 
 .border-bottom-highlight2 {
   height: 2.5px;
-  margin-top: .1rem;
+  margin-top: 0.1rem;
   background: #333; }
 
 .btn {
   display: inline-block;
-  padding: .75rem 1rem;
+  padding: 0.75rem 1rem;
   transition: all 0.3s;
   border: none;
   outline: none;
@@ -94,9 +94,9 @@
   background-color: #333;
   color: #f4f4f4; }
 
-button[class*='btn-']:hover,
-a[class*='btn-']:hover,
-input[class*='btn-']:hover {
+button[class*="btn-"]:hover,
+a[class*="btn-"]:hover,
+input[class*="btn-"]:hover {
   background-color: #ffbc00; }
 
 @keyframes flicker {
@@ -128,6 +128,7 @@ input[class*='btn-']:hover {
     background-color: #ffbc00;
     transform: scale(2) translateX(0) translateY(0) rotate(-28deg); }
   .work-image img {
+    object-fit: cover;
     height: 300px; }
   .work:hover .work-image {
     transform: scale(1.2);
@@ -237,6 +238,8 @@ ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem; }
+  #home-a .my-spicealztion .lead {
+    font-size: 1rem; }
   #home-a .my-spicealztion > div {
     padding: 1rem;
     border: 1px solid #ffbc00; }
@@ -250,12 +253,12 @@ ul {
   #home-b .stats div {
     padding: 3rem; }
     #home-b .stats div:nth-child(1) {
-      background-color: #3B56B3;
+      background-color: #3b56b3;
       color: #f4f4f4; }
     #home-b .stats div:nth-child(2) {
       background-color: #ccc; }
     #home-b .stats div:last-child {
-      background-color: #87A2FF;
+      background-color: #87a2ff;
       color: #333; }
   #home-b .stats li {
     margin-bottom: 1rem; }
@@ -289,7 +292,6 @@ ul {
     #home-c .process .step-icon:hover {
       background-color: #ffbc00;
       color: #333;
-      font-size: 4rem;
       transition: all 1s ease-out; }
       #home-c .process .step-icon:hover .step-number {
         background-color: #333;
@@ -329,8 +331,8 @@ ul {
     border-radius: 15px; }
 
 #about-c {
-  background-color: #3B56B3;
-  color: #f4f4f4; }
+  background-color: white;
+  color: #333; }
   #about-c .edoyot {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

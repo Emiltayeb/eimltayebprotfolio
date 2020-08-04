@@ -105,6 +105,9 @@ ul {
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 1rem;
 
+      .lead {
+        font-size: 1rem;
+      }
       & > div {
         padding: 1rem;
         border: 1px solid $main-color;
@@ -187,7 +190,7 @@ ul {
         &:hover {
           background-color: $main-color;
           color: $dark-color;
-          font-size: 4rem;
+
           transition: all 1s ease-out;
 
           .step-number {
@@ -257,9 +260,8 @@ ul {
   // secction-c
 
   &-c {
-    background-color: $complentary-color1;
-
-    color: set-text-color($complentary-color1);
+    background-color: white;
+    color: set-text-color(white);
 
     .edoyot {
       display: grid;
