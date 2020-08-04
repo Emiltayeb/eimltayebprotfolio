@@ -43,8 +43,13 @@ ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 1rem 1rem;
+  padding-top: 1rem;
   z-index: 5;
+
+  &.scrolled {
+    background-color: rgba(0, 0, 0, 0.755);
+    transition: background-color 1s;
+  }
   ul {
     display: flex;
 
@@ -70,19 +75,17 @@ ul {
   }
 }
 
-// utitlites
-
-#main-nav.scrolled {
-  background-color: rgba(3, 3, 3, 0.728);
-  transition: all 1000ms;
-}
-
 // header
 #header {
   &-home {
-    background: $bg-image no-repeat center center / cover;
+    background: linear-gradient(to top, #00000078, rgba(67, 67, 67, 0.455)),
+      $bg-image;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 90vh;
     // head content
+
     .header-content {
       display: flex;
       flex-direction: column;
@@ -115,9 +118,6 @@ ul {
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 1rem;
 
-      .lead {
-        font-size: 1rem;
-      }
       & > div {
         padding: 1rem;
         border: 1px solid $main-color;
@@ -200,7 +200,7 @@ ul {
         &:hover {
           background-color: $main-color;
           color: $dark-color;
-
+          font-size: 4rem;
           transition: all 1s ease-out;
 
           .step-number {
@@ -270,8 +270,9 @@ ul {
   // secction-c
 
   &-c {
-    background-color: white;
-    color: set-text-color(white);
+    background-color: $complentary-color1;
+
+    color: set-text-color($complentary-color1);
 
     .edoyot {
       display: grid;
@@ -309,8 +310,7 @@ ul {
 
         li {
           .recommendation-list-person-disc {
-            color: black;
-            border-bottom: 1px transparent solid;
+            color: $light-color;
             cursor: pointer;
 
             &:last-child {
@@ -321,7 +321,8 @@ ul {
             }
 
             &:hover {
-              border-color: black;
+              border-bottom: 1px $light-color solid;
+              padding-bottom: 0.15rem;
             }
 
             &-name {
@@ -401,7 +402,7 @@ ul {
   padding: 1.5rem;
   height: 5rem;
 
-  ul {git b
+  ul {
     display: flex;
 
     li {
