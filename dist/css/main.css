@@ -261,8 +261,8 @@ ul {
   #home-b .stats div {
     padding: 3rem; }
     #home-b .stats div:nth-child(1) {
-      background-color: #3b56b3;
-      color: #f4f4f4; }
+      background-color: #c2cfff;
+      color: #333; }
     #home-b .stats div:nth-child(2) {
       background-color: #ccc; }
     #home-b .stats div:last-child {
@@ -385,7 +385,8 @@ ul {
           font-size: 1.5rem; }
         #about-c .edoyot ul li .recommendation-list-person-disc-work {
           font-size: 1rem;
-          color: #ccc; }
+          color: #ccc;
+          text-align: center; }
 
 #contact {
   background-color: #f4f4f4; }

@@ -144,8 +144,8 @@ ul {
         padding: 3rem;
 
         &:nth-child(1) {
-          background-color: $complentary-color1;
-          color: set-text-color($complentary-color1);
+          background-color: $complentary-color3;
+          color: set-text-color($complentary-color3);
           // @include poligon-traingle-right;
         }
 
@@ -339,6 +339,7 @@ ul {
             &-work {
               font-size: 1rem;
               color: $medium-color;
+              text-align: center;
             }
           }
         }
