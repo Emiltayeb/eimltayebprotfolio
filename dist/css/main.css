@@ -300,8 +300,7 @@ ul {
     #home-c .process .step-icon:hover {
       background-color: #ffbc00;
       color: #333;
-      font-size: 4rem;
-      transition: all 1s ease-out; }
+      transition: all 0.5s ease-out; }
       #home-c .process .step-icon:hover .step-number {
         background-color: #333;
         color: #f4f4f4; }
