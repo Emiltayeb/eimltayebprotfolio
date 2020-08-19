@@ -169,6 +169,8 @@ input[class*="btn-"]:hover {
     font-size: 1.5rem; }
   .work-text-description {
     margin-top: 2rem; }
+  .work:last-child {
+    grid-column: 2; }
 
 * {
   margin: 0;

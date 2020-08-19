@@ -89,4 +89,8 @@
   &-text-description {
     margin-top: 2rem;
   }
+
+  &:last-child {
+    grid-column: 2;
+  }
 }
