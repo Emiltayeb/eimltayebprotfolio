@@ -43,3 +43,26 @@ $(document).ready(function () {
     } // End if
   });
 });
+
+const revealSections = function (entires) {
+  const [entry] = entires;
+
+  const currentSection = entry.target;
+  const isIntersection = entry.isIntersecting;
+
+  if (!isIntersection) return;
+  currentSection.classList.remove("hide");
+
+  observer.unobserve(currentSection);
+};
+
+const options = {
+  root: null,
+  threshold: 0.15,
+};
+const observer = new IntersectionObserver(revealSections, options);
+
+document.querySelectorAll("section").forEach((section) => {
+  observer.observe(section);
+  section.classList.add("hide");
+});
