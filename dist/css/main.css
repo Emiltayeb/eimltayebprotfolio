@@ -98,11 +98,6 @@
   opacity: 0;
   transform: translateY(10%); }
 
-.show {
-  opacity: 1;
-  transform: translateY(0%);
-  transition: all 0.5s ease-in-out; }
-
 button[class*="btn-"]:hover,
 a[class*="btn-"]:hover,
 input[class*="btn-"]:hover {
@@ -116,7 +111,7 @@ input[class*="btn-"]:hover {
 
 .works {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem; }
 
 .work {
@@ -192,11 +187,6 @@ body {
 a {
   text-decoration: none; }
 
-h2,
-h3,
-h4 {
-  text-transform: uppercase; }
-
 img {
   width: 100%; }
 
@@ -224,7 +214,6 @@ ul {
     #main-nav ul li {
       padding: 1rem 1.5rem; }
   #main-nav a {
-    text-transform: uppercase;
     color: #fff;
     padding-bottom: 0.55rem;
     border-bottom: 3px transparent solid;
