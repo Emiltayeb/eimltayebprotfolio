@@ -448,10 +448,8 @@ section {
     border: none; } }
 
 @media (max-width: 930px) {
-  #myworks .works {
-    grid-template-columns: 2fr; }
-    #myworks .works .work-image img {
-      width: 75%; }
+  #myworks .works .work-image img {
+    width: 75%; }
   #about-c .edoyot {
     grid-template-columns: 1fr; }
     #about-c .edoyot ul {
@@ -499,7 +497,7 @@ section {
   #about-c .lead {
     font-size: 1rem; }
   #myworks .works {
-    grid-template-columns: 1fr; }
+    display: block; }
     #myworks .works .work-image img {
       width: 100%; }
   #contact .contact-form {

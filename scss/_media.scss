@@ -17,8 +17,6 @@
 @media (max-width: 930px) {
   #myworks {
     .works {
-      grid-template-columns: 2fr;
-
       .work-image {
         img {
           width: 75%;
@@ -138,7 +136,7 @@
 
   #myworks {
     .works {
-      grid-template-columns: 1fr;
+      display: block;
 
       .work-image {
         img {
