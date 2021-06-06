@@ -382,9 +382,10 @@ section {
           flex-direction: column;
           justify-content: center;
           align-items: center; }
-        #about-c .edoyot ul li .recommendation-list-person-disc:hover {
-          border-bottom: 1px #f4f4f4 solid;
-          padding-bottom: 0.15rem; }
+        #about-c .edoyot ul li .recommendation-list-person-disc .recommendation-list-person-disc-work {
+          border-bottom: 1px transparent solid; }
+        #about-c .edoyot ul li .recommendation-list-person-disc .recommendation-list-person-disc-work:hover {
+          border-color: #f4f4f4; }
         #about-c .edoyot ul li .recommendation-list-person-disc-name {
           font-size: 1.5rem; }
         #about-c .edoyot ul li .recommendation-list-person-disc-work {

@@ -332,9 +332,11 @@ section {
               align-items: center;
             }
 
-            &:hover {
-              border-bottom: 1px $light-color solid;
-              padding-bottom: 0.15rem;
+            .recommendation-list-person-disc-work {
+              border-bottom: 1px transparent solid;
+            }
+            & .recommendation-list-person-disc-work:hover {
+              border-color: $light-color;
             }
 
             &-name {
