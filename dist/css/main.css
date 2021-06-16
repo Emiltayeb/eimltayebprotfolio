@@ -224,11 +224,11 @@ ul {
       border-color: #ffbc00; }
 
 #header-home {
-  background-image: linear-gradient(to top, #00000078, rgba(67, 67, 67, 0.455)), url("../img/profilePic.jpg");
+  background-image: linear-gradient(to top, #00000078, rgba(67, 67, 67, 0.455)), url("https://wallpapercave.com/wp/wp6784383.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh; }
+  height: 60vh; }
   #header-home .header-content {
     display: flex;
     flex-direction: column;
