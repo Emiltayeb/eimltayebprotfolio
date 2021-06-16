@@ -232,6 +232,8 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
   height: 70vh; }
+  #header-home .container {
+    height: 100%; }
   #header-home .header-content {
     position: relative;
     display: flex;
@@ -239,8 +241,11 @@ ul {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 15%;
-    color: #f4f4f4; }
+    color: #f4f4f4;
+    height: 100%; }
+    #header-home .header-content #myWorkBtn {
+      position: absolute;
+      bottom: 20%; }
     #header-home .header-content h1 span {
       margin-right: 0.55rem; }
 

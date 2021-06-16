@@ -90,6 +90,9 @@ ul {
     height: 70vh;
     // head content
 
+    .container {
+      height: 100%;
+    }
     .header-content {
       position: relative;
       display: flex;
@@ -97,9 +100,14 @@ ul {
       justify-content: center;
       align-items: center;
       text-align: center;
-      padding-top: 15%;
-      color: $light-color;
 
+      color: $light-color;
+      height: 100%;
+
+      #myWorkBtn {
+        position: absolute;
+        bottom: 20%;
+      }
       h1 span {
         margin-right: 0.55rem;
       }
