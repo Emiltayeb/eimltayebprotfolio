@@ -156,23 +156,26 @@ input[class*="btn-"]:hover {
     transform: translateY(-20%);
     transition: opacity 500ms cubic-bezier(0.4, 1, 0.3, 1), transform 500ms cubic-bezier(0.4, 1, 0.3, 1);
     text-align: center; }
-  .work-text-title {
-    font-size: 2rem;
-    font-weight: 100; }
-    .work-text-title-link {
-      text-decoration: none;
-      color: white;
-      border-bottom: solid 1px transparent; }
-      .work-text-title-link:hover {
-        color: #333;
-        border-color: black;
-        letter-spacing: 0.3rem;
-        transition: all 0.7s; }
-  .work-text-category {
-    font-weight: 50;
-    font-size: 1.5rem; }
-  .work-text-description {
-    margin-top: 2rem; }
+    .work-text-title {
+      font-size: 2rem;
+      font-weight: 100; }
+      .work-text-title-link {
+        text-decoration: underline;
+        color: black;
+        font-size: 1.5rem; }
+        .work-text-title-link:hover {
+          color: #333;
+          letter-spacing: 0.3rem;
+          transition: all 0.7s; }
+    .work-text-broad {
+      font-size: 1.3rem;
+      text-transform: center;
+      max-width: 70%;
+      margin: 0 auto; }
+    .work-text-tools {
+      font-size: 0.8rem;
+      color: black;
+      margin-top: 2rem; }
   .work:last-child {
     grid-column: 2; }
 
@@ -228,8 +231,9 @@ ul {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 60vh; }
+  height: 70vh; }
   #header-home .header-content {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;

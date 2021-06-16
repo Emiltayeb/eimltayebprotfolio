@@ -1,493 +1,429 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awsome -->
+    <script
+      src="https://kit.fontawesome.com/cd555a857e.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Assistant&display=swap"
+      rel="stylesheet"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Emil Tayeb | Home</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- font awsome -->
-  <script src="https://kit.fontawesome.com/cd555a857e.js" crossorigin="anonymous"></script>
-  <!-- font -->
-  <link href="https://fonts.googleapis.com/css?family=Assistant&display=swap" rel="stylesheet">
-  <!-- main css -->
-  <link rel="stylesheet" href="css/main.css">
-  <title>Emil Tayeb | Home</title>
-</head>
+  <body>
+    <!-- header -->
+    <header id="header-home">
+      <nav id="main-nav">
+        <img class="logo" src="./img/emil_logo.png" alt="" />
+        <ul>
+          <li><a class="current" href="#header-home">Home</a></li>
 
-<body>
-  <!-- header -->
-  <header id="header-home">
+          <li><a href="#myworks">My Projects</a></li>
+          <li><a href="#about-b">About Me</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="container">
+        <div class="header-content">
+          <h1 class="l-heading">
+            Hey! I'm Emil, a
+            <span
+              class="txt-type"
+              data-wait="3000"
+              data-words='["Web Developer"]'
+            ></span>
+          </h1>
 
-
-    </div>
-    <nav id="main-nav">
-      <img class="logo" src="./img/emil_logo.png" alt="">
-      <ul>
-        <li><a class="current" href="#header-home">Home</a></li>
-
-        <li><a href="#myworks">My Projects</a></li>
-        <li><a href="#about-b">About Me</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="container">
-
-      <div class="header-content">
-        <h1 class="l-heading">My Name Is Emil The <span class="txt-type" data-wait="3000"
-            data-words='["Web Developer","Music Producer","Instructional Designer"]'></span></h1>
-
-        <a href="#myworks" class="btn btn-light">My Projects</a>
-      </div>
-    </div>
-  </header>
-
-  <!-- scetion a -->
-
-  <section id="myworks" class="text-center py-4">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="border-bottom-highlight"></div>
-      <p class="lead">Collection of web applications projects i've worked on.</p>
-      <div class="works">
-        <div class="work">
-          <div class="work-image">
-            <img src="img/items/wikiSwitch.jpg" alt="">
-
-          </div>
-          <div class=" work-text">
-            <div class="work-text-wrap">
-              <p class="work-text-category">WikiSwitch | פרויקט גמר
-                <br>
-                הדרך הכי מקורית ללמוד מווקיפדיה
-              </p>
-              <h3 class="work-text-title">
-                <a target="_blank" href="http://wikiswitch-env.eba-96ghevwz.eu-west-1.elasticbeanstalk.com"
-                  class="work-text-title-link" href="#">WikiSwitch</a>
-              </h3>
-              <p class="work-text-description">React,Nodejs,Material ui, Html, Sass (bulma)</p>
-            </div>
-          </div>
-        </div>
-
-
-
-        <div class="work">
-          <div class="work-image">
-            <img src="img/items/Telemusic.jpg" alt="">
-          </div>
-          <div class="work-text">
-            <div class="work-text-wrap">
-              <p class="work-text-category">TeleMusic - נגן מוזיקה </p>
-              <h3 class="work-text-title">
-                <a target="_blank" href="https://emiltayeb.github.io/Telem-music/"
-                  class="work-text-title-link">TeleMusic</a>
-              </h3>
-              <p class="work-text-description">Pure Vanilla JS, Html , Css </p>
-
-            </div>
-          </div>
-        </div>
-
-
-        <div class="work">
-          <div class="work-image">
-            <img src="img/items/airtable.JPG" alt="">
-
-          </div>
-          <div class=" work-text">
-            <div class="work-text-wrap">
-              <p class="work-text-category">שחזור אתר - Airtable</p>
-              <h3 class="work-text-title">
-                <a target="_blank" href="https://emiltayeb.github.io/airtableClone/" class="work-text-title-link"
-                  href="#">Airtable</a>
-              </h3>
-              <p class="work-text-description">Advance html & css, javascript</p>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="work">
-          <div class="work-image">
-            <img src="img/items/days.JPG" alt="">
-
-          </div>
-          <div class=" work-text">
-            <div class="work-text-wrap">
-              <p class="work-text-category">
-                אתר עם אנמציות גלילה | Days
-
-
-              </p>
-              <h3 class="work-text-title">
-                <a target="_blank" href="https://emiltayeb.github.io/daysClone/" class="work-text-title-link"">Days</a>
-              </h3>
-              <p class=" work-text-description">Html, Css, Gsap for animation</p>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="work">
-          <div class="work-image">
-            <img src="img/items/conqauretheisland.JPG" alt="">
-
-          </div>
-          <div class=" work-text">
-            <div class="work-text-wrap">
-              <p class="work-text-category">פיתוח משחק אסטרטגיה ומחולל משחקים בעל קונספט מקורי</p>
-              <h3 class="work-text-title">
-                <a target="_blank"
-                  href="http://projects.telem-hit.net/2020/TriangleProjects_spring/ConqaureTheIsland_EmilAvital/index.html"
-                  class="work-text-title-link" href="#">כבוש את האי</a>
-              </h3>
-              <p class="work-text-description">Actionscript,Js,Adobe Animate,</p>
-            </div>
-          </div>
-        </div>
-        <!-- 
-        <div class="work">
-          <div class="work-image">
-            <img src="img/items/thebusdriver.jpg" alt="">
-
-          </div>
-          <div class=" work-text">
-            <div class="work-text-wrap">
-              <p class="work-text-category">משחק חברה - נהג האוטבוס</p>
-              <h3 class="work-text-title">
-                <a target="_blank" href="https://emiltayeb.github.io/theBusDriver/"
-                  class="work-text-title-link"">The Bus Driver</a>
-              </h3>
-              <p class="work-text-description">Vanilla Js, Html , Css</p>
-            </div>
-          </div>
-        </div> -->
-
-        <div class="work">
-          <div class="work-image">
-            <img src="img/items/news.jpg" alt="">
-
-          </div>
-          <div class=" work-text">
-            <div class="work-text-wrap">
-              <p class="work-text-category">אתר חדשות דמיוני</p>
-              <h3 class="work-text-title">
-                <a target="_blank" href="https://emiltayeb.github.io/EmilTayebProtfolio/News_Grid_emil/index.html"
-                  class="work-text-title-link" href="#">News Website</a>
-              </h3>
-              <p class="work-text-description">Css grid,Mobile First</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- <div class="work">
-          <div class="work-image">
-            <img src="img/items/officeErgonomics.JPG" alt="">
-
-          </div>
-          <div class=" work-text">
-            <div class="work-text-wrap">
-              <p class="work-text-category">"לומדת "ארגונומיה במשרד</p>
-              <h3 class="work-text-title">
-                <a target="_blank" href="https://emiltayeb.github.io/Office_Ergonomic/Office_ergonomics%20-%20Storyline%20output/story.html"
-                  class="work-text-title-link">Office Ergonomics</a>
-              </h3>
-              <p class="work-text-description">Storyline, Visual Design</p>
-            </div>
-          </div>
-        </div> -->
-
-        <!-- <div class="work">
-          <div class="work-image">
-            <img src="img/items/githubFinder.JPG" alt="">
-
-          </div>
-          <div class=" work-text">
-            <div class="work-text-wrap">
-              <p class="work-text-category">חיפוש משתמשים בגיטהאב</p>
-              <h3 class="work-text-title">
-                <a target="_blank" href="https://emiltayebgithubfinder.netlify.app/"
-                  class="work-text-title-link">GithubFinder</a>
-              </h3>
-              <p class="work-text-description">React(usestate,usereducer,use context,Routes)</p>
-            </div>
-          </div>
-        </div> -->
-        <!-- <div class="work">
-          <div class="work-image">
-            <img src="img/items/video editor.jpg" alt="">
-
-          </div>
-          <div class=" work-text">
-            <div class="work-text-wrap">
-              <p class="work-text-category">פיתוח והפקה של אנמציה</p>
-              <h3 class="work-text-title">
-                <a target="_blank" href="https://emiltayeb.github.io/Hope_Animation/Hope_Animation.html"
-                  class="work-text-title-link" href="#">Hope</a>
-              </h3>
-              <p class="work-text-description">Adobe Animate Animation</p>
-            </div>
-          </div>
-      </div> -->
-
-
-        <!-- <div class="work">
-          <div class="work-image">
-            <img src="img/items/todolist.jpg" alt="">
-
-          </div>
-          <div class=" work-text">
-            <div class="work-text-wrap">
-              <p class="work-text-category">אפלקציית רשימת מטלות</p>
-              <h3 class="work-text-title">
-                <a target="_blank" href="https://emiltayeb.github.io/To-Do-List/index.html"
-                  class="work-text-title-link" >To-Do List</a>
-              </h3>
-              <p class="work-text-description">Html,Css, JAvascript Dom manipolation</p>
-            </div>
-          </div>
-        </div> -->
-
-        <!-- <div class="work">
-          <div class="work-image">
-            <img src="img/items/bear maker.jpg" alt="">
-
-          </div>
-          <div class=" work-text">
-            <div class="work-text-wrap">
-              <p class="work-text-category">אפלקציית יצירת ביטים במוזיקה</p>
-              <h3 class="work-text-title">
-                <a target="_blank" href="https://emiltayeb.github.io/beat_maker_912/"
-                  class="work-text-title-link">Beat Maker</a>
-              </h3>
-              <p class="work-text-description">Html,Css, JAvascript Dom manipolation</p>
-            </div>
-          </div>
-        </div> -->
-
-
-
-
-  </section>
-  <section id="about-b" class="py-4">
-    <div class="container ">
-      <h2 class="m-heading text-center">My Technical Skills</h2>
-
-
-      <div class="border-bottom-highlight"></div>
-
-
-      <h3 class="s-heading">Front-end</h3>
-      <div style="width:120px">
-        <div class="border-bottom-highlight2 " style></div>
-      </div>
-      <div class="progress-item">
-        <h3>React (Hooks,Context Api,Func components)</h3>
-
-        <div class="progress">
-          <div style="width:100%;"></div>
+          <a id="myWorkBtn" href="#myworks" class="btn btn-light"
+            >My Projects</a
+          >
         </div>
       </div>
+    </header>
 
+    <!-- scetion a -->
+    <section id="myworks" class="text-center py-4">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="border-bottom-highlight"></div>
+        <p class="lead">
+          Collection of web applications projects i've worked on.
+        </p>
 
+        <div class="works">
+          <div class="work">
+            <div class="work-image">
+              <img src="img/items/wikiSwitch.jpg" alt="" />
+            </div>
+            <div class="work-text">
+              <div class="work-text-wrap">
+                <a
+                  target="_blank"
+                  href="http://wikiswitch-env.eba-96ghevwz.eu-west-1.elasticbeanstalk.com"
+                  class="work-text-title-link work-text-header"
+                  href="#"
+                  >WikiSwitch | graduation project
+                </a>
 
-      <div class="progress-item">
-        <h3>Javacript(ES6/7/8)</h3>
+                <p class="work-text-broad">
+                  Full-Stack web appliaction' build for educators to help
+                  creating trvia game based on wikipedia articles.
+                </p>
 
-        <div class="progress">
-          <div style="width: 100%;"></div>
-        </div>
-      </div>
+                <p class="work-text-tools">
+                  React,Nodejs,Material ui, Html, Sass (bulma)
+                </p>
+              </div>
+            </div>
+          </div>
 
-      <div class="progress-item">
-        <h3>Html && Css (sass & scss)</h3>
+          <div class="work">
+            <div class="work-image">
+              <img src="img/items/days.JPG" alt="" />
+            </div>
+            <div class="work-text">
+              <div class="work-text-wrap">
+                <a
+                  target="_blank"
+                  href="https://emiltayeb.github.io/daysClone/"
+                  class="work-text-title-link work-text-header"
+                  href="#"
+                  >Days
+                </a>
 
-        <div class="progress">
-          <div style="width: 100%;"></div>
-        </div>
-      </div>
+                <p class="work-text-broad">Scroll animation webside</p>
+                <p class="work-text-tools">Html, Css, Gsap for animation</p>
+              </div>
+            </div>
+          </div>
 
-      <h3 class="s-heading">Back-end</h3>
-      <div style="width:120px">
-        <div class="border-bottom-highlight2 " style></div>
-      </div>
+          <div class="work">
+            <div class="work-image">
+              <img src="img/items/Telemusic.jpg" alt="" />
+            </div>
+            <div class="work-text">
+              <div class="work-text-wrap">
+                <a
+                  target="_blank"
+                  href="https://emiltayeb.github.io/Telem-music/"
+                  class="work-text-title-link work-text-header"
+                  href="#"
+                  >TeleMusic
+                </a>
 
+                <p class="work-text-broad">
+                  Created an audio-player as a side project for students at
+                  H.I.T instruconial technologies faculty
+                </p>
+                <p class="work-text-tools">Pure Vanilla JS, Html , Css</p>
+              </div>
+            </div>
+          </div>
 
-      <div class="progress-item">
+          <div class="work">
+            <div class="work-image">
+              <img src="img/items/airtable.JPG" alt="" />
+            </div>
+            <div class="work-text">
+              <div class="work-text-wrap">
+                <a
+                  target="_blank"
+                  href="https://emiltayeb.github.io/airtableClone/"
+                  class="work-text-title-link work-text-header"
+                  href="#"
+                  >AirTable
+                </a>
+                <p class="work-text-broad">
+                  Reversed engineer Airtable landing page
+                </p>
+                <p class="work-text-tools">Advance html & css, javascript</p>
+              </div>
+            </div>
+          </div>
 
-        <h3>Node js (Express, Routing)</h3>
+          <div class="work">
+            <div class="work-image">
+              <img src="img/items/conqauretheisland.JPG" alt="" />
+            </div>
+            <div class="work-text">
+              <div class="work-text-wrap">
+                <a
+                  target="_blank"
+                  href="
+                http://projects.telem-hit.net/2020/TriangleProjects_spring/ConqaureTheIsland_EmilAvital/index.html"
+                  class="work-text-title-link work-text-header"
+                  href="#"
+                >
+                  Conquer The Island
+                </a>
+                <p class="work-text-broad">
+                  An original full-stack 2 player strategy game
+                </p>
+                <p class="work-text-tools">Actionscript,Js,Adobe Animate,</p>
+              </div>
+            </div>
+          </div>
 
-        <div class="progress">
-          <div style="width:70%;"></div>
-        </div>
-      </div>
-      <div class="progress-item">
+          <div class="work">
+            <div class="work-image">
+              <img src="img/items/news.jpg" alt="" />
+            </div>
+            <div class="work-text">
+              <div class="work-text-wrap">
+                <a
+                  target="_blank"
+                  href="https://emiltayeb.github.io/EmilTayebProtfolio/News_Grid_emil/index.html"
+                  class="work-text-title-link work-text-header"
+                  href="#"
+                >
+                  News Grid
+                </a>
 
-        <h3>Mysql</h3>
+                <p class="work-text-broad">News Website</p>
 
-        <div class="progress">
-          <div style="width: 80%;"></div>
-        </div>
-      </div>
-      <div class="progress-item">
-
-        <h3>C#</h3>
-
-        <div class="progress">
-          <div style="width: 70%;"></div>
-        </div>
-      </div>
-
-
-
-
-      <!-- <h3>Sound Design</h3>
-      <div style="width:120px">
-        <div class="border-bottom-highlight2 " style></div>
-      </div>
-      <div class="progress">
-        <div style="width:95%;"></div>
-      </div> -->
-      <!-- <h3>Instruconial Designing</h3>
-      <div style="width:220px">
-        <div class="border-bottom-highlight2 " style></div>
-      </div>
-      <div class="progress">
-        <div style="width:85%;"></div>
-      </div> -->
-    </div>
-  </section>
-  <section id="about-c" class="py-3">
-    <div class="container">
-      <p class="m-heading text-center">See what other's have to say about me</p>
-      <div class="border-bottom-highlight"></div>
-
-
-      <div class="edoyot">
-        <div class="recommendation">
-          <p class="recommendation-text">"Emil's ambition is second to none. He is a fast learner with a passion for
-            learning new technologies and tools and has extraordinary interpersonal skills. Any organization will
-            benefit from his exceptional skills and personality⭐"</p>
-          <img src="img/testimonials/Talperetz.jpg" alt="">
-
-          <ul class="recommendation-list">
-            <li>
-              <a class="recommendation-list-person-disc" target="_blank"
-                href="https://www.linkedin.com/in/talper/"><span class="recommendation-list-person-disc-name">Tal
-                  Peretz</span><span class="recommendation-list-person-disc-work">CTO, Magical</span> </a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <div cla ss="recommendation">
-            <p class="recommendation-text">"If you are searching for a real dev professional - Emil is your guy! I have
-              been working closely with Emil on several dev projects, and every time I have received both a ver
-              y high-quality service and a real success partner."</p>
-            <img src="img/testimonials/yaniv.jpg" alt="">
-
-            <ul class="recommendation-list">
-              <li><a class="recommendation-list-person-disc" target="_blank"
-                  href="https://www.linkedin.com/in/yaniv-kramer/"><span
-                    class="recommendation-list-person-disc-name">Yaniv Kramer </span> <span
-                    class="recommendation-list-person-disc-work">Head of Cornerstone Professional Services at Matrix
-                  </span> </a>
-              </li>
-            </ul>
+                <p class="work-text-tools">Css grid,Mobile First</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div>
+      </div>
+    </section>
+    <section id="about-b" class="py-4">
+      <div class="container">
+        <h2 class="m-heading text-center">My Technical Skills</h2>
+
+        <div class="border-bottom-highlight"></div>
+
+        <h3 class="s-heading">Front-end</h3>
+        <div style="width: 120px">
+          <div class="border-bottom-highlight2" style></div>
+        </div>
+        <div class="progress-item">
+          <h3>React (Hooks,Context Api,Func components)</h3>
+
+          <div class="progress">
+            <div style="width: 100%"></div>
+          </div>
+        </div>
+
+        <div class="progress-item">
+          <h3>Javacript(ES6/7/8)</h3>
+
+          <div class="progress">
+            <div style="width: 100%"></div>
+          </div>
+        </div>
+
+        <div class="progress-item">
+          <h3>Html && Css (sass & scss)</h3>
+
+          <div class="progress">
+            <div style="width: 100%"></div>
+          </div>
+        </div>
+
+        <h3 class="s-heading">Back-end</h3>
+        <div style="width: 120px">
+          <div class="border-bottom-highlight2" style></div>
+        </div>
+
+        <div class="progress-item">
+          <h3>Node js (Express, Routing)</h3>
+
+          <div class="progress">
+            <div style="width: 70%"></div>
+          </div>
+        </div>
+        <div class="progress-item">
+          <h3>Mysql</h3>
+
+          <div class="progress">
+            <div style="width: 80%"></div>
+          </div>
+        </div>
+        <div class="progress-item">
+          <h3>C#</h3>
+
+          <div class="progress">
+            <div style="width: 70%"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about-c" class="py-3">
+      <div class="container">
+        <p class="m-heading text-center">
+          See what other's have to say about me
+        </p>
+        <div class="border-bottom-highlight"></div>
+
+        <div class="edoyot">
           <div class="recommendation">
             <p class="recommendation-text">
-              "I've known Emil for more than 10 years, He is a great person and great team
-              player.
-              we have collaborated on several
-              projects while Emil made a quick, robust Front-End development interface.
-              I'd recommend any organization to have Emil on their team"</p>
-            <img src="img/testimonials/dror2.jpeg" alt="">
+              "Emil's ambition is second to none. He is a fast learner with a
+              passion for learning new technologies and tools and has
+              extraordinary interpersonal skills. Any organization will benefit
+              from his exceptional skills and personality⭐"
+            </p>
+            <img src="img/testimonials/Talperetz.jpg" alt="" />
 
             <ul class="recommendation-list">
               <li>
-                <a class="recommendation-list-person-disc" target="_blank"
-                  href="https://www.linkedin.com/in/dror-salti-b15786154/"><span
-                    class="recommendation-list-person-disc-name">Dror Salti</span>
-                  <span class="recommendation-list-person-disc-work">data scientist at autofleet</span> </a>
+                <a
+                  class="recommendation-list-person-disc"
+                  target="_blank"
+                  href="https://www.linkedin.com/in/talper/"
+                  ><span class="recommendation-list-person-disc-name"
+                    >Tal Peretz</span
+                  ><span class="recommendation-list-person-disc-work"
+                    >CTO, Magical</span
+                  >
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="recommendation">
+            <p class="recommendation-text">
+              "If you are searching for a real dev professional - Emil is your
+              guy! I have been working closely with Emil on several dev
+              projects, and every time I have received both a ver y high-quality
+              service and a real success partner."
+            </p>
+            <img src="img/testimonials/yaniv.jpg" alt="" />
+
+            <ul class="recommendation-list">
+              <li>
+                <a
+                  class="recommendation-list-person-disc"
+                  target="_blank"
+                  href="https://www.linkedin.com/in/yaniv-kramer/"
+                  ><span class="recommendation-list-person-disc-name"
+                    >Yaniv Kramer
+                  </span>
+                  <span class="recommendation-list-person-disc-work"
+                    >Head of Cornerstone Professional Services at Matrix
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="recommendation">
+            <p class="recommendation-text">
+              "I've known Emil for more than 10 years, He is a great person and
+              great team player. we have collaborated on several projects while
+              Emil made a quick, robust Front-End development interface. I'd
+              recommend any organization to have Emil on their team"
+            </p>
+            <img src="img/testimonials/dror2.jpeg" alt="" />
+
+            <ul class="recommendation-list">
+              <li>
+                <a
+                  class="recommendation-list-person-disc"
+                  target="_blank"
+                  href="https://www.linkedin.com/in/dror-salti-b15786154/"
+                  ><span class="recommendation-list-person-disc-name"
+                    >Dror Salti</span
+                  >
+                  <span class="recommendation-list-person-disc-work"
+                    >data scientist at autofleet</span
+                  >
+                </a>
               </li>
             </ul>
           </div>
         </div>
-
       </div>
-    </div>
-  </section>
-  <!-- section c -->
+    </section>
 
-
-  <!-- <section id="home-c" class=" text-center  py-3">
-    <div class="container">
-      <h2>How I'm being creative</h2>
-      <div class="border-bottom-highlight"></div>
-      <div class="process my-2">
-        <div class="step">
-          <i class="fas fa-user  step-icon"> <div class="step-number">1</div></i>
-          <h3>The User Experience</h3>
-          <p>As part of the main goal, is to give the user what he needs.
-            not letting the user "Think" is the foundation of my design and how I craft every UI/UX design I'm working on.
-            
-          </p>
-        </div>
-        <div class="step">
-          <i class="far step-icon fa-handshake">
-            <div class="step-number">2</div>
-          </i>
-
-          <h3>Meet And Dicsuss Your Project</h3>
-          <p>Every good project needs an open mind and brainstorming. whatever the project, I will give a 150% of myself.</p>
-        </div>
-        <div class="step">
-          <i class="fas fa-laptop-code step-icon"> <div class="step-number">3</div></i>
-
-          <h3>Getting The Job Done</h3>
-          <p>it's always important not just to know the skills, but to do the job.I'm working with passion and with one interest in mind, be the best I can with every project.</p>
+    <section id="contact" class="py-4">
+      <div class="container">
+        <div class="contact">
+          <h2 class="text-center m-heading">How You Can Reach Me</h2>
+          <div class="border-bottom-highlight"></div>
+          <form
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            class="contact-form my-2"
+          >
+            <input
+              class="name"
+              name="name"
+              id="name"
+              type="text"
+              placeholder="Enter Your Name"
+            />
+            <input
+              class="email"
+              name="email"
+              id="Email"
+              type="text"
+              placeholder="yourmail@example.com"
+            />
+            <input
+              class="subject"
+              name="subject"
+              id="subject"
+              type="text"
+              placeholder="Your Subject"
+            />
+            <input
+              class="phone"
+              name="phone"
+              id="phone"
+              type="text"
+              placeholder="Enter Your Phone Number"
+            />
+            <textarea
+              class="massage"
+              name="massage"
+              name="message"
+              id="message"
+              placeholder="Enter Message"
+            ></textarea>
+            <input type="submit" class="btn btn-dark" value="Send" />
+            <div class="my-2 captcha" data-netlify-recaptcha="true"></div>
+          </form>
         </div>
       </div>
-    </div>
-  </section> -->
-  <!-- contact -->
-  <!-- contact -->
-  <section id="contact" class="py-4">
-    <div class="container">
-      <div class="contact">
-        <h2 class="text-center m-heading">How You Can Reach Me</h2>
-        <div class="border-bottom-highlight"></div>
-        <form name="contact" method="POST" data-netlify="true" class="contact-form my-2">
-          <input class="name" name="name" id="name" type="text" placeholder="Enter Your Name" />
-          <input class="email" name="email" id="Email" type="text" placeholder="yourmail@example.com" />
-          <input class="subject" name="subject" id="subject" type="text" placeholder="Your Subject" />
-          <input class="phone" name="phone" id="phone" type="text" placeholder="Enter Your Phone Number" />
-          <textarea class="massage" name="massage" name="message" id="message" placeholder="Enter Message"></textarea>
-          <input type="submit" class="btn btn-dark" value="Send" />
-          <div class="my-2 captcha" data-netlify-recaptcha="true"></div>
-        </form>
-      </div>
-    </div>
-  </section>
-  <footer id="main-footer">
-    <p>copyright &copy; Emiltayeb 2020</p>
-    <ul>
-      <li><a target="_blank" href="https://www.linkedin.com/in/emil-tayeb/"><i class="fab fa-linkedin"></i></li></a>
+    </section>
+    <footer id="main-footer">
+      <p>copyright &copy; Emiltayeb 2020</p>
+      <ul>
+        <li>
+          <a target="_blank" href="https://www.linkedin.com/in/emil-tayeb/"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </li>
 
-      <li><a target="_blank" href="https://www.youtube.com/channel/UCNP52z98GjNgzSbDZTFRu1g?view_as=subscriber"> <i
-            class="fab fa-youtube"></i></a>
-
-      </li>
-      <li><a target="_blank" href="https://www.facebook.com/emil.tayeb"> <i class="fab fa-facebook"></i></a>
-
-      </li>
-    </ul>
-  </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/smoothScoller.js"></script>
-  <script src="js/typewriter.js"></script>
-
-</body>
-
+        <li>
+          <a
+            target="_blank"
+            href="https://www.youtube.com/channel/UCNP52z98GjNgzSbDZTFRu1g?view_as=subscriber"
+          >
+            <i class="fab fa-youtube"></i
+          ></a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.facebook.com/emil.tayeb">
+            <i class="fab fa-facebook"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/smoothScoller.js"></script>
+    <script src="js/typewriter.js"></script>
+  </body>
 </html>

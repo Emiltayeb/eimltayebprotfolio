@@ -49,8 +49,12 @@ const revealSections = function (entires) {
 
   const currentSection = entry.target;
   const isIntersection = entry.isIntersecting;
+  console.log(
+    `🚀 ~ file: smoothScoller.js ~ line 52 ~ revealSections ~ isIntersection`,
+    currentSection
+  );
 
-  if (!isIntersection) return;
+  if (!isIntersection ) return;
   currentSection.classList.remove("hide");
 
   observer.unobserve(currentSection);
@@ -62,7 +66,9 @@ const options = {
 };
 const observer = new IntersectionObserver(revealSections, options);
 
-document.querySelectorAll("section").forEach((section) => {
+document.querySelectorAll("section:not(#myworks)").forEach((section) => {
+
+  console.log(section)
   observer.observe(section);
   section.classList.add("hide");
 });

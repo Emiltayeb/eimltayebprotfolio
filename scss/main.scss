@@ -87,10 +87,11 @@ ul {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 60vh;
+    height: 70vh;
     // head content
 
     .header-content {
+      position: relative;
       display: flex;
       flex-direction: column;
       justify-content: center;
