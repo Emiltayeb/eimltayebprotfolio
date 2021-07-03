@@ -1,3 +1,5 @@
+@import '_media_quries';
+
 .works {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -7,10 +9,11 @@
 .work {
   position: relative;
   overflow: hidden;
+  margin: 1rem 0;
 
   // creating overlay
   &:after {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     top: 0;
@@ -31,6 +34,10 @@
   &-image img {
     object-fit: cover;
     height: 300px;
+
+    @include media('<=tablet') {
+      object-fit: contain;
+    }
   }
 
   // hover on weach work
@@ -63,13 +70,13 @@
     text-align: center;
 
     &-title {
-      font-size: 2rem;
-      font-weight: 100;
-
       &-link {
         text-decoration: underline;
         color: black;
         font-size: 1.5rem;
+        @include media('<=tablet') {
+          font-size: 1.2rem;
+        }
 
         &:hover {
           color: $dark-color;
@@ -80,16 +87,27 @@
       }
     }
     &-broad {
-      font-size: 1.3rem;
-      text-transform: center;
+      font-size: 1.5rem;
+      text-align: center;
       max-width: 70%;
       margin: 0 auto;
+
+      @include media('<=tablet') {
+        font-size: 1rem;
+      }
     }
 
     &-tools {
-      font-size: 0.8rem;
+      font-size: 1.2rem;
       color: black;
       margin-top: 2rem;
+      max-width: 60%;
+      margin: 0 auto;
+      text-align: center;
+
+      @include media('<=tablet') {
+        font-size: 0.8rem;
+      }
     }
   }
 

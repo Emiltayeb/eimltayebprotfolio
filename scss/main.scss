@@ -1,5 +1,5 @@
-@import "config";
-@import "gallery_grid";
+@import 'config';
+@import 'gallery_grid';
 
 * {
   margin: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "Assistant", sans-serif;
+  font-family: 'Assistant', sans-serif;
   line-height: 1.6;
 }
 
@@ -83,7 +83,7 @@ ul {
         #00000078,
         rgba(67, 67, 67, 0.455)
       ),
-      url("https://wallpapercave.com/wp/wp6784383.jpg");
+      url('https://wallpapercave.com/wp/wp6784383.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -243,7 +243,7 @@ section {
 
     .biography {
       display: grid;
-      grid-template-areas: "bioimage  bio  bio";
+      grid-template-areas: 'bioimage  bio  bio';
       grid-gap: 1rem;
 
       img {
@@ -374,9 +374,9 @@ section {
   .contact-form {
     display: grid;
     grid-template-areas:
-      "name name email email"
-      "subject subject phone phone"
-      "massage massage massage massage";
+      'name name email email'
+      'subject subject phone phone'
+      'massage massage massage massage';
     grid-gap: 1rem;
   }
 
@@ -404,7 +404,7 @@ section {
     padding: 1rem;
   }
 
-  input[type="submit"] {
+  input[type='submit'] {
     grid-column: 1 / span 4;
   }
 
@@ -450,4 +450,4 @@ section {
   // section c
 }
 
-@import "media";
+@import 'media';
